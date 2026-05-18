@@ -8,8 +8,6 @@
 #pragma once
 
 #include <deque>
-#include <vector>
-#include <cstddef>
 
 class A2
 {

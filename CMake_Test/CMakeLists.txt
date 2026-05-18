@@ -6,6 +6,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(OpenCV 4.5 REQUIRED)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
+set(FORCED_INCLUDE_HEADER "${CMAKE_BINARY_DIR}/cmake_forced_include.hpp")
+file(WRITE "${FORCED_INCLUDE_HEADER}"
+"#include <cstddef>\n"
+"#include <vector>\n"
+)
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    add_compile_options(-include "${FORCED_INCLUDE_HEADER}")
+endif()
+
 add_subdirectory(common)
 add_subdirectory(modules)
 
@@ -28,7 +38,9 @@ target_include_directories(A1 PUBLIC ${CMAKE_SOURCE_DIR}/modules/A1/include)
 add_library(A2 STATIC
     ${CMAKE_SOURCE_DIR}/modules/A2/src/A2.cpp
 )
-target_include_directories(A2 PUBLIC ${CMAKE_SOURCE_DIR}/modules/A2/include)
+target_include_directories(A2 PUBLIC 
+    ${CMAKE_SOURCE_DIR}/modules/A2/include
+)
 
 add_library(M2 STATIC
     ${CMAKE_SOURCE_DIR}/modules/M2/src/M2.cpp
