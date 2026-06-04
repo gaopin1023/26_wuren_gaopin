@@ -1,0 +1,6 @@
+turtle_8_node:
+  ros__parameters:
+    #8字形由两个相切圆组成，振幅即圆的半径
+    radius_x: 4.5      #x轴摆幅
+    radius_y: 4.5       #y轴摆幅
+    speed: 0.35          #运动速度因子

@@ -1,0 +1,3 @@
+[console_scripts]
+turtle_8_node = base_demo.turtle_8_node:main
+

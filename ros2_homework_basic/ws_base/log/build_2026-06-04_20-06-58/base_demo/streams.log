@@ -1,0 +1,21 @@
+[0.340s] Invoking command in '/home/gaopin/Desktop/ros2_ homework_basic/ws_base/src/base_demo': PYTHONPATH=/home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gaopin/Desktop/ros2_ homework_basic/ws_base/install/base_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/base_demo build --build-base /home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/build install --record /home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/install.log --single-version-externally-managed install_data
+[0.472s] running egg_info
+[0.473s] writing ../../build/base_demo/base_demo.egg-info/PKG-INFO
+[0.473s] writing dependency_links to ../../build/base_demo/base_demo.egg-info/dependency_links.txt
+[0.473s] writing entry points to ../../build/base_demo/base_demo.egg-info/entry_points.txt
+[0.473s] writing requirements to ../../build/base_demo/base_demo.egg-info/requires.txt
+[0.473s] writing top-level names to ../../build/base_demo/base_demo.egg-info/top_level.txt
+[0.474s] reading manifest file '../../build/base_demo/base_demo.egg-info/SOURCES.txt'
+[0.475s] writing manifest file '../../build/base_demo/base_demo.egg-info/SOURCES.txt'
+[0.475s] running build
+[0.475s] running build_py
+[0.475s] running install
+[0.475s] running install_lib
+[0.476s] running install_data
+[0.476s] running install_egg_info
+[0.477s] removing '/home/gaopin/Desktop/ros2_ homework_basic/ws_base/install/base_demo/lib/python3.10/site-packages/base_demo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.477s] Copying ../../build/base_demo/base_demo.egg-info to /home/gaopin/Desktop/ros2_ homework_basic/ws_base/install/base_demo/lib/python3.10/site-packages/base_demo-0.0.0-py3.10.egg-info
+[0.478s] running install_scripts
+[0.492s] Installing turtle_8_node script to /home/gaopin/Desktop/ros2_ homework_basic/ws_base/install/base_demo/lib/base_demo
+[0.493s] writing list of installed files to '/home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/install.log'
+[0.510s] Invoked command in '/home/gaopin/Desktop/ros2_ homework_basic/ws_base/src/base_demo' returned '0': PYTHONPATH=/home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gaopin/Desktop/ros2_ homework_basic/ws_base/install/base_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/base_demo build --build-base /home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/build install --record /home/gaopin/Desktop/ros2_ homework_basic/ws_base/build/base_demo/install.log --single-version-externally-managed install_data
