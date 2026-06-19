@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypes="http://www.w3.org/2001/XMLSchema"?>
+<!-- ROS3格式包定义 -->
+<package format="3">
+  <!-- 当前功能包名称，ros2 run/launch必须匹配 -->
+  <name>perception_ctrl</name>
+  <!-- 包版本号，开发阶段固定0.0.0 -->
+  <version>0.0.0</version>
+  <!-- 包功能描述，团队成员识别分包职责 -->
+  <description>4号工程师分包：感知处理+纯跟踪阿克曼小车全局路径跟踪控制，支持直角转弯自动减速</description>
+  <!-- 维护人邮箱 -->
+  <maintainer email="student@robot.com">robot_team_4</maintainer>
+  <!-- 开源协议 -->
+  <license>Apache-2.0</license>
+
+  <!-- Python ament编译工具依赖 -->
+  <buildtool_depend>ament_python</buildtool_depend>
+  <!-- CMake编译工具依赖，兼容混合编译 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS2基础消息、工具依赖 -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>ackermann_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+
+
+  <!-- 一号工程师两个仿真分包核心依赖，必须声明才能调用小车模型、传感器接口 -->
+  <depend>racecar_description</depend>
+  <depend>sim_perception</depend>
+
+  <!-- 单元测试依赖 -->
+  <test_depend>ament_pytest</test_depend>
+
+  <!-- 包导出配置，声明编译类型为Python ament -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

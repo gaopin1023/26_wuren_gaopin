@@ -1,0 +1,20 @@
+pure_pursuit:
+  wheel_base: 0.30
+  max_steering_angle: 0.6
+  max_speed: 1.2
+  min_speed: 0.2
+  lookahead_base: 0.4
+  lookahead_gain: 0.8
+  min_lookahead: 0.3
+  max_lookahead: 1.0
+  path_search_range: 1.5
+  turn_slowdown_dist: 0.8
+  turn_speed: 0.3
+  turn_angle_thresh: 1.57
+topics:
+  reference_path: "/reference_path"
+  odom_topic: "/odom"
+  ackermann_cmd: "/ackermann_cmd"
+debug:
+  publish_marker: true
+  use_virtual_odom: false
