@@ -43,6 +43,6 @@ robot_ws/
 │   ├── racecar_lacalization/        # 2号：位姿融合、定位功能包
 │   ├── map_planner/        # 3号：建图+全局规划包
 │   └── perception_ctrl/     # 4号：感知+局部控制功能包 
-└── README.md           # 项目说明文档（写清楚每个人分工、启动命令）
-
+└── README.md           # 项目说明文档
+最后未完全完成
 
